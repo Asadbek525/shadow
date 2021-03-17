@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(3, 7, 24);
+  background-color: #03045e;
 }
 html {
   box-sizing: border-box;
@@ -29,16 +29,118 @@ html {
     0px 0px 30px rgb(11, 245, 245), 0px 0px 50px rgb(11, 245, 245);
 }
 .box-shadow__demo {
-  background-color: rgb(25, 59, 110);
+  background-color: #023e8a;
   padding: 30px;
-  box-shadow: 0px 0px 10px blue;
+  box-shadow: 0px 0px 10px #023e8a;
 }
 .box-shadow__demo-output {
-  background-color: rgb(140, 183, 247);
+  background-color: #0077b6;
   padding: 30px;
-  border: 1px solid white;
 }
 .box-input {
   width: 80%;
   margin: 20px auto;
+}
+.box-input:hover {
+  box-shadow: 0 0 20px #0096c7;
+}
+a {
+  overflow: hidden;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  text-decoration: none;
+  color: #03e9f4;
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 30px;
+  padding: 10px;
+  transition: 0.5s;
+}
+a:hover {
+  color: white;
+  background-color: #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 5px #03e9f4, 0 0 25px #03e9f4,
+    0 0 55px #03e9f4, 0 0 65px #03e9f4, 0 0 85px #03e9f4;
+}
+a span {
+  position: absolute;
+  display: inline-block;
+}
+a span:nth-child(1) {
+  height: 2px;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  animation: anim1 1s linear infinite;
+  display: block;
+  background-image: linear-gradient(90deg, transparent, rgb(1, 204, 255));
+}
+@keyframes anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+a span:nth-child(2) {
+  height: 100%;
+  width: 2px;
+  top: -100%;
+  right: 0;
+  animation: anim2 1s linear infinite;
+  display: block;
+  background-image: linear-gradient(transparent, rgb(1, 204, 255));
+  animation-delay: 0.3s;
+}
+@keyframes anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+a span:nth-child(3) {
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  right: -100%;
+  animation: anim3 1s linear infinite;
+  display: block;
+  background-image: linear-gradient(90deg, transparent, rgb(1, 204, 255));
+  animation-delay: 0.5s;
+}
+@keyframes anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+a span:nth-child(4) {
+  height: 100%;
+  width: 2px;
+  bottom: -100%;
+  left: 0;
+  animation: anim4 1s linear infinite;
+  display: block;
+  background-image: linear-gradient(transparent, rgb(1, 204, 255));
+  animation-delay: 0.7s;
+}
+@keyframes anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
