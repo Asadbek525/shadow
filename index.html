@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shadows</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center title">"CSS" da soya effectlari</h1>
+      <div class="box-shadow">
+        <h2 style="color: white">#box-shadow</h2>
+        <div class="box-shadow__header">
+          <p>
+            CSS box-shadow xususiyati element ramkasi atrofida soya effektlarini
+            qo'shish uchun ishlatiladi. Siz vergul bilan ajratilgan bir nechta
+            effektlarni o'rnatishingiz mumkin.
+          </p>
+        </div>
+        <div class="box-shadow__header">
+          <h3 style="color: white">Syntax</h3>
+          <code>
+            box-shadow: inset | offset-x | offset-y | blur-radius |
+            spread-radius | color
+          </code>
+        </div>
+        <div class="box-shadow__demo row">
+          <div class="box-shadow__demo-input col-md-6">
+            <input
+              value="box-shadow: 10px 5px 5px red;"
+              type="text"
+              id="input-1"
+              class="box-input"
+              onchange="onChange(event)"
+              onfocus="onFocus()"
+              onkeyup="onKeyup()"
+            />
+            <input
+              value="box-shadow: 60px -16px teal;"
+              type="text"
+              class="box-input"
+              onchange="onChange(event)"
+              onfocus="onFocus()"
+              onkeyup="onKeyup()"
+            />
+            <input
+              value="box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);"
+              type="text"
+              class="box-input"
+              onchange="onChange(event)"
+              onfocus="onFocus()"
+              onkeyup="onKeyup()"
+            />
+            <input
+              value="box-shadow: inset 5em 1em gold;"
+              type="text"
+              class="box-input"
+              onchange="onChange(event)"
+              onfocus="onFocus()"
+              onkeyup="onKeyup()"
+            />
+            <input
+              value="box-shadow: 3px 3px red, -1em 0 .4em olive;"
+              type="text"
+              class="box-input"
+              onchange="onChange(event)"
+              onfocus="onFocus()"
+              onkeyup="onKeyup()"
+            />
+          </div>
+          <div id="box" class="box-shadow__demo-output col-md-6">
+            <h1>CSS da soya effectidan foydalanilmoqda</h1>
+            <code style="font-size: 20px" id="output--code"></code>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <div class="box-shadow">
+        <h2 style="color: white">#text-shadow</h2>
+        <div class="box-shadow__header">
+          <p>
+            Text-shadow CSS xususiyati matnga soyalarni qo'shadi. U matnga va
+            uning har qanday bezaklariga qo'llaniladigan soyalarning vergul
+            bilan ajratilgan ro'yxatini qabul qiladi. Har bir soya elementning
+            xiralashuvi radiusi va rangining X va Y siljishlarining
+            birlashtirilishi bilan tavsiflanadi.
+          </p>
+        </div>
+        <div class="box-shadow__header">
+          <h3 style="color: white">Syntax</h3>
+          <code> text-shadow: offset-x | offset-y | blur-radius | color </code>
+        </div>
+        <div class="box-shadow__demo row">
+          <div class="box-shadow__demo-input col-md-6">
+            <input
+              value="text-shadow: 1px 1px 2px pink;"
+              type="text"
+              id="input-1"
+              class="box-input"
+              onchange="onChangeText(event)"
+              onfocus="onFocusText()"
+              onkeyup="onKeyupText()"
+            />
+            <input
+              value="text-shadow: #FC0 1px 0 10px;"
+              type="text"
+              class="box-input"
+              onchange="onChangeText(event)"
+              onfocus="onFocusText()"
+              onkeyup="onKeyupText()"
+            />
+            <input
+              value="text-shadow: 5px 5px #558ABB;"
+              type="text"
+              class="box-input"
+              onchange="onChangeText(event)"
+              onfocus="onFocusText()"
+              onkeyup="onKeyupText()"
+            />
+            <input
+              value="text-shadow: red 2px 5px;"
+              type="text"
+              class="box-input"
+              onchange="onChangeText(event)"
+              onfocus="onFocusText()"
+              onkeyup="onKeyupText()"
+            />
+            <input
+              value="text-shadow: 5px 10px;"
+              type="text"
+              class="box-input"
+              onchange="onChangeText(event)"
+              onfocus="onFocusText()"
+              onkeyup="onKeyupText()"
+            />
+            <input
+              value="text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;"
+              type="text"
+              class="box-input"
+              onchange="onChangeText(event)"
+              onfocus="onFocusText()"
+              onkeyup="onKeyupText()"
+            />
+          </div>
+          <div id="text" class="box-shadow__demo-output col-md-6">
+            <h1>CSS da soya effectidan foydalanilmoqda</h1>
+            <code style="font-size: 20px" id="output--code1"></code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    let output_code = document.getElementById('output--code');
+    let output_code1 = document.getElementById('output--code1');
+    let box = document.getElementById('box');
+    let text = document.getElementById('text');
+    const onChange = (event) => {
+      return event.target.value;
+    };
+    const onKeyup = () => {
+      let style = onChange(event);
+      box.style = style;
+      console.log('working');
+      output_code.innerText = style;
+    };
+    const onFocus = () => {
+      onKeyup();
+    };
+    const onChangeText = (event) => {
+      return event.target.value;
+    };
+    const onKeyupText = () => {
+      let style = onChangeText(event);
+      text.style = style;
+      console.log('working');
+      output_code1.innerText = style;
+    };
+    const onFocusText = () => {
+      onKeyupText();
+    };
+  </script>
+</html>

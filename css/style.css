@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(3, 7, 24);
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.title {
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  color: wheat;
+}
+.box-shadow__header {
+  transition: all 0.5s;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.box-shadow__header p {
+  color: white;
+}
+.box-shadow__header:hover {
+  box-shadow: 0px 0px 20px rgb(11, 245, 245), 0px 0px 10px rgb(11, 245, 245),
+    0px 0px 30px rgb(11, 245, 245), 0px 0px 50px rgb(11, 245, 245);
+}
+.box-shadow__demo {
+  background-color: rgb(25, 59, 110);
+  padding: 30px;
+  box-shadow: 0px 0px 10px blue;
+}
+.box-shadow__demo-output {
+  background-color: rgb(140, 183, 247);
+  padding: 30px;
+  border: 1px solid white;
+}
+.box-input {
+  width: 80%;
+  margin: 20px auto;
+}
